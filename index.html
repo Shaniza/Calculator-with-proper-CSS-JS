@@ -11,18 +11,19 @@
         <input type="number" id="num1">
         <input type="number" id="num2">
         <button onclick="showRes()">Calculate</button>
-        <p>Result:<span id="addResult()">0</span></p>
+        <p>Result:<span id="addResult">0</span></p>
     </main>
 
     <script>
         function showRes(params){
-            let num1 = document.getElementById("num1").value
-            let num2 = document.getElementById("num2").value
-            console.log(Number(num1 + num2))
+            let num1 = Number(document.getElementById("num1").value)
+            let num2 = Number(document.getElementById("num2").value)
+            let addResult = document.getElementById("addResult")
+            addResult.innerHTML = num1 + num2
 
 
         }
 
-    </script>
+    </script>a
 </body>
 </html>
